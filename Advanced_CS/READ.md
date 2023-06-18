@@ -1,6 +1,6 @@
 # Advanced Computational Science
 
-## Machine Learning
+## Machine Learning/機械学習ゼミ
 
 ### Jun NAKAMURA
 
