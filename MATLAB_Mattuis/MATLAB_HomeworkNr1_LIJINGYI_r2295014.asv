@@ -1,0 +1,35 @@
+%MATLAB-Homework Nr.5-1
+%student name: LI JINGYI  Student Nr: r2295014 
+clear all
+format compact
+format short
+
+n=0:0.1:10;
+complex_exp=exp(1j*n);                  
+L=length(n);
+%%%%%%3D%%%%%%
+x=n;                     
+y=imag(f);                   
+z=real(f);                    
+y_0=zeros(size(n));            %获取y=0的点集   
+y_1=ones(size(n));             %获取y=1的点集
+z_0=zeros(size(n));            %获取z=0的点集
+z_1=ones(size(n));             %获取z=1的点集
+plot3(x,y,z,'.b');             %绘制虚指数函数图像
+hold on
+grid on
+x1=[x;x];
+y1=[y;y_0];
+z1=[z;z_0];
+% 绘制复指数函数图像上的点对应的连线
+for i=1:L                      
+  plot3(x1(:,i),y1(:,i),z1(:,i),'b');  
+end
+% 绘制副部指数函数图像所绕的轴
+plot3(x,y_0,z_0,'k');  
+
+
+
+
+
+return
